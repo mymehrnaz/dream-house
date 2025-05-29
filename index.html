@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <title>My Dream House</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <style>
+        header{
+            background-color:#17202a;
+        }
+     .fig{ 
+        background-color: #8878b9;
+     }  
+     .hir{
+        background-color: white;
+     } 
+h1{
+    text-align: center;
+    font-size: 50px;
+      font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  
+
+}
+h2{
+    font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 60px;
+
+}
+p{
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-size: 20px;
+}
+.freak{
+  display: flex;
+  flex-direction: row;
+  color: rgb(199, 199, 39);
+}
+.freak:before, .freak:after{
+  content: "";
+  flex: 1 1;
+  border-bottom: 1px solid;
+  margin: auto;
+}
+.freak:before{
+  margin-right: 10px;
+}
+.freak:after{
+  margin-left: 10px;
+}
+.containeri{
+    position: relative;
+    text-align: center;
+    color: aliceblue;
+}
+.centered{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.card-3 {
+  width: 1500px;
+  background: rgba(41, 41, 41, 0.07);
+  white-space: nowrap;
+  overflow: hidden;
+  border-radius: 50px;
+  -webkit-box-shadow: -10px 0px 13px -7px #0000003a,
+    10px 0px 13px -7px #0000003a, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: -10px 0px 33px -7px #0000003a, 10px 0px 33px -7px #0000003a,
+    5px 5px 35px 5px rgba(0, 0, 0, 0);
+}
+
+button-1{
+    font-size: 70px;
+    margin: 0 5px;
+    border: none;
+    background-color: transparent;
+    cursor: grab;
+    font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+
+}
+button-1:hover{
+    transform: scale(1.1);
+    transition: 5s ease;
+}
+/* to pause on hover  */
+/* .card:hover .emojis{
+animation-play-state:paused;}
+*/
+.emojis{
+    display: inline-block;
+    animation: 8s sliding infinite linear;
+}
+@keyframes sliding{
+    from{
+        transform:translateX(0);
+    }
+    to{
+        transform:translateX(-101%) ;
+    }
+}
+div.scrollmenu {
+  background-color: #f0eaea;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+div.scrollmenu a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+  background-color: #f0eeee;
+}
+footer{
+  background-color: #17202a;
+}
+    </style>
+</head>
+<body>
+    <header>
+<div class="containeri">
+ <ul class="nav justify-content-center">
+  <li class="nav-item">
+    <a class="nav-link  text-light" aria-current="page" href="#"><img src="img/logo.png" width="50px"></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link text-light" href="#house">Dream House</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link text-light" href="#decore">Decoration</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link text-light" href="#about">About</a>
+  </li>
+ </ul>
+       
+        <img src="img/head.jpg" width="100%">
+        <div class="overlay-text"><h1 class="centered">Dream House</h1></div>
+</div> 
+    </header>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#17202a" fill-opacity="1" d="M0,256L48,229.3C96,203,192,149,288,144C384,139,480,181,576,208C672,235,768,245,864,245.3C960,245,1056,235,1152,245.3C1248,256,1344,288,1392,304L1440,320L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+
+    
+    <section class="hir">
+        <div class="card-3 mt-5 ms-2 d-lg-block d-none d-md-block">
+  <div class="emojis">
+    <button-1 class="text-info">location</button>
+    <button-1 class="text-success">layout</button>
+    <button-1 class="text-danger">exterior</button>
+    <button-1 class="text-warning">interior</button>
+  </div>
+  <div class="emojis">
+    <button-1 class="text-info">location</button>
+    <button-1 class="text-success">layout</button>
+    <button-1 class="text-danger">exterior</button>
+    <button-1 class="text-warning">interior</button>
+  </div>
+  <div class="emojis">
+    <button-1 class="text-info">location</button>
+    <button-1 class="text-success">layout</button>
+    <button-1 class="text-danger" >exterior</button>
+    <button-1 class="text-warning">interior</button>
+  </div>
+  <div class="emojis">
+    <button-1 class="text-info">location</button>
+    <button-1 class="text-success">layout</button>
+    <button-1 class="text-danger" >exterior</button>
+    <button-1 class="text-warning" >interior</button>
+  </div>
+<div class="emojis">
+    <button-1 class="text-info">location</button>
+    <button-1 class="text-success">layout</button>
+    <button-1 class="text-danger">exterior</button>
+    <button-1 class="text-warning">interior</button>
+  </div>
+  <div class="emojis">
+    <button-1 class="text-info">location</button>
+    <button-1 class="text-success" >layout</button>
+    <button-1 class="text-danger">exterior</button>
+    <button-1 class="text-warning" >interior</button>
+  </div>
+<div class="emojis">
+    <button-1 class="text-info">location</button>
+    <button-1 class="text-success">layout</button>
+    <button-1 class="text-danger">exterior</button>
+    <button-1 class="text-warning">interior</button>
+  </div>
+  <div class="emojis">
+    <button-1 class="text-info">location</button>
+    <button-1 class="text-success">layout</button>
+    <button-1 class="text-danger">exterior</button>
+    <button-1 class="text-warning">interior</button>
+  </div>
+
+
+</div>
+<br/>
+<h2 class="d-lg-none d-md-none d-sm-block m-5 text-center">
+  
+  let's build our dream house:
+</h2> 
+    </section>
+    <section class="fig">
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,256L48,229.3C96,203,192,149,288,144C384,139,480,181,576,208C672,235,768,245,864,245.3C960,245,1056,235,1152,245.3C1248,256,1344,288,1392,304L1440,320L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+
+    
+        <h2 class="d-flex justify-content-center m-5 text-light">An Ideal House</h2>
+    <div class="d-flex justify-content-evenly">
+        <div class="card" style="width: 18rem;">
+  <img src="img/exterior-1.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text d-flex justify-content-center">A stunning house built into cliff.</p>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="img/exterior.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text d-flex justify-content-center">A house built near a cliff with the view of a watwrfall.</p>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="img/awsome.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text d-flex justify-content-center">A house built between two cliffs.</p>
+  </div>
+</div>
+    </div><br/>
+    <div class="d-flex justify-content-evenly">
+        <div class="card" style="width: 18rem;">
+  <img src="img/farm.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text d-flex justify-content-center">A house with the view of the meadow.</p>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="img/dakhel-2.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text d-flex justify-content-center">A house with the view of the sea.</p>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="img/dakhel-1.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text d-flex justify-content-center">A house with the view of the forest</p>
+  </div>
+</div>
+    </div>
+
+    </section>
+    <section>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#8878b9" fill-opacity="1" d="M0,256L48,229.3C96,203,192,149,288,144C384,139,480,181,576,208C672,235,768,245,864,245.3C960,245,1056,235,1152,245.3C1248,256,1344,288,1392,304L1440,320L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+    
+<h2 class="m-5 d-flex justify-content-center" id="house">What is exactly a dream house?</h2>
+<p class="m-5 d-flex justify-content-center">A dream home should be a place where the person finds comfort, no matter where they go, they will find peace at that one place. A dream house is a place that a person dreams and each day wishes to be in that place.</p><p class="d-flex justify-content-center text-success">Steps to build your dream house:</p>
+<h2 class="freak">Location</h2><br/>
+<div class="clearfix">
+  <img src="img/lacotion.png" class="col-md-6 float-md-end mb-3 ms-md-3" width="50%" alt="...">
+
+  <p class="ps-3">
+    Location of the house
+  </p>
+
+
+  <p class="ps-3">
+    A good location for building a house prioritizes accessibility, safety, and an environment conducive to daily life. Consider factors like proximity to work, essential amenities, and recreational facilities. Also, factor in the type of terrain, soil stability, and climate suitability. 
+
+
+  </p>
+
+  <p class="ps-3">
+    The land should be stable, with good drainage and not susceptible to soil erosion. It is also advisable to choose a location with different types of soil, as it will impact the quality of the house. Investigate the availability of green spaces, air quality, and the general health of the surroundings.
+
+
+
+  </p>
+</div>
+
+<h2 class="freak">Layout</h2><br/>
+<div class="clearfix">
+  <img src="img/plan.jpg" class="col-md-6 float-md-end mb-3 ms-md-3" width="50%" alt="...">
+
+  <p class="ps-3">
+    A Layout of a house </p>
+
+  <p class="ps-3">
+   A house layout refers to the arrangement and design of rooms, spaces, and furniture within a home, often represented in a floor plan. It's about the overall structure and flow of the interior, determining how different areas connect and how they function. 
+ </p>
+
+  <p class="ps-3">
+    The layout of your home can play a significant role in what it looks like and how comfortable the interiors are to live in.
+    
+  </p>
+</div>
+<h2 class="freak">Exterior Design</h2><br/>
+<div class="clearfix">
+  <img src="img/dreamy.webp" class="col-md-6 float-md-end mb-3 ms-md-3" width="50%" alt="...">
+
+  <p class="ps-3">
+    Exterior Design of the house
+  </p>
+
+
+  <p class="ps-3">
+    Exterior design is the process of designing the external appearance of offices, homes, commercial complexes, country houses, restaurants, stores, and other objects. This includes elements such as facades, cladding, roofs, and foundation elements.
+
+  </p>
+
+  <p class="ps-3">
+    The exterior parts of a house include doors, windows, roofing, siding, and landscaping. These visible outer components protect the interior and define the home's appearance. These elements serve functional roles, such as insulation and protection, and also contribute to the home's enhanced curb appeal.
+
+  </p>
+</div>
+<h2 class="freak">Interior Design</h2><br/>
+<div class="clearfix">
+  <img src="img/dakhel.jpg" class="col-md-6 float-md-end mb-3 ms-md-3" width="40%" alt="...">
+
+  <p class="ps-3">
+    Interior Design of the house
+  </p>
+
+
+  <p class="ps-3">
+    Interior design is the art and science of enhancing the interior of a building to achieve a healthier and more aesthetically pleasing environment for the people using the space. With a keen eye for detail and a creative flair, an interior designer is someone who plans, researches, coordinates, and manages such enhancement projects. Interior design is a multifaceted profession that includes conceptual development, space planning, site inspections, programming, research, communicating with the stakeholders of a project, construction management, and execution of the design.
+
+
+
+  </p>
+
+  <p class="ps-3">
+    Any project can be clearly defined by having solid principles in place. This is particularly true regarding the seven principles of interior design: balance, unity, rhythm, emphasis, contrast, scale and proportion, and details.
+
+
+  </p>
+</div>
+
+    </section>
+    <section class="fig">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,256L48,229.3C96,203,192,149,288,144C384,139,480,181,576,208C672,235,768,245,864,245.3C960,245,1056,235,1152,245.3C1248,256,1344,288,1392,304L1440,320L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+
+      <h2 class="m-5 text-light d-flex justify-content-center" id="decore">House Decoration</h2>
+      <p class="m-5 text-light d-flex justify-content-center">To decorate your home, start by defining your style and creating a plan that reflects your personality. Consider your color palette, select essential pieces, add artwork, and incorporate your personal touch. Don't forget to layer lighting, use mirrors strategically, and add houseplants. 
+</p>
+<div class="scrollmenu mb-5">
+  <a href="#home"><img src="img/armchair.jpg" width="90px"></a>
+  <a href="#news"><img src="img/bed.jpg" width="90px"></a>
+  <a href="#contact"><img src="img/boshgab.jpg" width="90px"></a>
+  <a href="#about"><img src="img/fridge.jpg" width="90px"></a>
+  <a href="#support"><img src="img/fuset.jpg" width="90px"></a>
+  <a href="#blog"><img src="img/safa.jpg" width="90px"></a>
+  <a href="#tools"><img src="img/plant.jpg" width="90px"></a>  
+  <a href="#base"><img src="img/nahar.jpg" width="90px"></a>
+  <a href="#custom"><img src="img/miz.jpg" width="90px"></a>
+  <a href="#more"><img src="img/arayash.jpg" width="90px"></a>
+  <a href="#logo"><img src="" width="90px"></a>
+  <a href="#friends"><img src="img/lamp.jpg" width="90px"></a>
+  <a href="#partners"><img src="img/komod.jpg" width="90px"></a>
+  <a href="#people"><img src="img/komod-2.jpg" width="90px"></a>
+  <a href="#work"><img src="img/ketab.jpg" width="90px"></a>
+    <a href="#home"><img src="img/1.1.jpg" width="90px"></a>
+  <a href="#news"><img src="img/1.2.jpg" width="90px"></a>
+  <a href="#contact"><img src="img/1.3.jpg" width="90px"></a>
+  <a href="#about"><img src="img/1.4.jpg" width="90px"></a>
+  <a href="#support"><img src="img/1.5.jpg" width="90px"></a>
+</div>
+
+    </section>
+    <section>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#8878b9" fill-opacity="1" d="M0,256L48,229.3C96,203,192,149,288,144C384,139,480,181,576,208C672,235,768,245,864,245.3C960,245,1056,235,1152,245.3C1248,256,1344,288,1392,304L1440,320L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+<h2 class="d-flex justify-content-center">My Dream House:</h2>
+
+    </section>
+    <footer id="abour">
+      <h2 class="text-light">About Me</h2>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+
+</body>
+</html>
