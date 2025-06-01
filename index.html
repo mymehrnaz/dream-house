@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+ <script src="https://kit.fontawesome.com/1a804c7335.js" crossorigin="anonymous"></script>
+
     <style>
         header{
             background-color:#17202a;
@@ -36,7 +38,7 @@ h2{
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  font-size: 60px;
+  font-size: 30px;
 
 }
 p{
@@ -137,6 +139,87 @@ div.scrollmenu a:hover {
 footer{
   background-color: #17202a;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif
+}
+.chat
+{
+    min-width: 100vw;
+    min-height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: #16384c;
+}
+
+.container .card
+{
+    max-width: 300px;
+    height: 215px;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    transition: 0.3s ease-in-out;
+}
+.container .card:hover
+{
+    height: 550px;
+}
+.container .card .imgContainer
+{
+    position: relative;
+    width:250px;
+    height:250px;
+    top:-50px;
+    left:10px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+.container .card .imgContainer img
+{
+    max-width: 100%;
+    border-radius: 4px;
+}
+.container .card .content
+{
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color:#111;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s ease-in-out;
+}
+.container .card:hover .content
+{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
+}
+
+@media (max-width: 330px){
+    .container .card .imgContainer{
+        left: -2px;
+    }
+}
+.hstack{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-self: stretch;
+}
+.jordan{
+color: beige;
+}
+
     </style>
 </head>
 <body>
@@ -164,7 +247,8 @@ footer{
 </nav>
        
         <img src="img/head.jpg" width="100%">
-        <div class="overlay-text"><h1 class="centered text-light">Dream House</h1></div>
+        <div class="overlay-text"><h1 class="centered text-light d-block d-lg-none">Dream House</h1>
+        <h1 class="centered text-dark d-none d-lg-block">Dream House</h1></div>
 </div> 
     </header>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#17202a" fill-opacity="1" d="M0,256L48,229.3C96,203,192,149,288,144C384,139,480,181,576,208C672,235,768,245,864,245.3C960,245,1056,235,1152,245.3C1248,256,1344,288,1392,304L1440,320L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
@@ -399,8 +483,63 @@ footer{
 <h2 class="d-flex justify-content-center" id="dream">My Dream House:</h2>
 
     </section>
+<section class="bir">
+   
+        <img src="img/back.2.jpg" width="100%">
+        
+
+   
+  </section>
+   <p class="p-3">I would like to have a house made of crystal. It would be a wonderful place to live, and I would never have any bad experiences while staying there. The scenery outside is breathtaking, and I would never tire of looking at it.
+
+On the west side of the house, through the crystal wall, I can see a beautiful waterfall cascading down a wild, rugged cliff. To the east, there’s a vast meadow that leads to an astounding river. The river is wide but shallow, allowing the colorful seabed—filled with vibrant rocks and beautiful fish—to be clearly visible.
+
+To the north, a serene forest stretches out, home to many calm and friendly animals that would never harm me. But the most fascinating part of the house is the south side. A thick curtain covers the entire wall, and whenever I pull it aside, I can see into space. It appears as though the house floats in space, offering views of distant galaxies and nearby planets of the Milky Way. It's the most beautiful scene anyone could ever imagine in a dream.
+
+Yes, this is the house I truly want to have—a place where I can live a tranquil and stress-free life. I also have a small garden in the meadow where I grow all kinds of fruits and vegetables.
+
+Inside, the house has four rooms: a kitchen, a living room, a bedroom, and a bathroom. There is also a beautiful circular room at the back of the house, exactly where the south wall is. From there, I can gaze at the galaxies. This room is my library, filled with books from around the world. It resembles the legendary Akashic Records.
+</p>
+<section>
+  <div class="container d-flex align-items-center justify-content-center position-relative flex-wrap">
+        <div class="card d-flex position-relative flex-column">
+            <div class='imgContainer'>
+                <img src='img/library.jpg' width="80%">
+            </div>
+            <div class="content">
+                <h2>Library</h2>
+                <p>The Library with the view of distant galaxies.</p>
+            </div>
+        </div>
+        <div class="card d-flex position-relative flex-column">
+            <div class='imgContainer'>
+                <img src='img/waterfall.jpg' width="80%">
+            </div>
+            <div class="content">
+                <h2>Waterfall View</h2>
+                <p class="mt-3">The view of waterfall cascading down a wils, rugged cliff.</p>
+            </div>
+        </div>
+        <div class="card d-flex position-relative flex-column">
+            <div class='imgContainer'>
+                <img src='img/dakhel-2.jpg'>
+            </div>
+            <div class="content">
+                <h2>Living Room</h2>
+                <p>The Living Room with a view of a beautiful lake.</p>
+            </div>
+        </div>
+    </div>
+</section class="chat">
     <footer id="about">
-      <h2 class="text-light">About Me:</h2>
+      <h2 class="text-light d-flex justify-content-center">About Me:</h2>
+      
+      <div class="hstack gap-3">
+  <div class="p-3 jordan">My name is Mehrnaz Sadeghian</div>
+  <div class="p-3 text-light">All the photoes are taken from pintrest<i class="fa-brands fa-pinterest ps-3"></i></div>
+  <div class="p-3 m-3 text-light">Please contact me on:<a href="https://github.com/mymehrnaz/" target="_blank"><i class="fab fa-github ps-3"></i></a><a href="mailto:mehrnazsadeghian8968@gmail.com" target="_blank"><i class="fa-regular fa-envelope-open ps-3"></i></a></div>
+</div>
+
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 
